@@ -1,11 +1,10 @@
 import Link from "../src/components/Link";
-import Footer from "../src/components/Footer";
 import Title from "../src/components/Title";
 
-export default function FAQPage() {
+export default function Page404() {
   return (
     <div>
-      <Title>Alura Cases - FAQ Page</Title>
+      <Title>Você se perdeu e caiu na página 404 :O</Title>
       <Link href="/">Ir para a Home</Link>
     </div>
   )
