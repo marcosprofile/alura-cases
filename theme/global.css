@@ -3,18 +3,17 @@
 :root {
   --shadow: 0 0 24px 8px rgba(0, 0, 0, .4);
   --input: #FBEFDD;
+  --height: calc(100% - 84px);
 }
 
-html, body {
-  overflow: hidden
-}
+html, body { overflow: hidden }
 
 body {
   background-color: #F2E6D5;
   height: 100vh;
   font-family: 'Inter', sans-serif;
 
-  #__next {
-    height: 100%
-  }
+  #__next { height: 100% }
 }
+
+@media (max-width: 400px) {:root { --height: unset }}

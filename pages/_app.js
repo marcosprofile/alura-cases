@@ -4,7 +4,7 @@ import '../theme/global.css'
 
 export default function App({ Component, pageProps }) {
   return (
-    <div className='flex flex-col items-center h-full'>
+    <div className='items-center h-full overflow-y-auto overflow-x-hidden'>
       <Component {...pageProps} />
       <Footer />
     </div>

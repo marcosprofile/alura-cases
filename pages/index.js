@@ -8,12 +8,12 @@ import Image from 'next/image'
 
 export default function HomeScreen() {
   return (
-    <div className="flex items-center h-full max-w-[1200px]">
-      <div className="grid grid-cols-2 gap-24">
+    <div className="flex sm:items-center h-[var(--height)] max-w-[1200px] m-auto px-4 py-16">
+      <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-24 h-full">
         {/* LEFT CONTAINER */}
-        <div className="flex flex-col items-start gap-20">
+        <div className="flex flex-col items-start gap-14 xl:gap-20 xl:min-w-160">
           <Image width={80} height={24} src='/alura-logo.svg' />
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-4 xl:gap-6">
             <div className="flex items-center gap-1">
               <Chip href="/faq" >O que tem de novo?</Chip>
               <Chip href="/faq" noBg>Confira as principais dúvidas</Chip>
@@ -29,8 +29,8 @@ export default function HomeScreen() {
         </div>
         
         {/* RIGHT CONTAINER */}
-        <div className="flex items-center relative w-full h-full">
-          <Image width={1420} height={800} className="absolute min-w-[1420px] rounded-3xl shadow-[var(--shadow)]" src='/alura-cases.png' alt="Plataforma Alura" />
+        <div className="flex items-center relative w-full lg:h-full">
+          <Image width={1420} height={800} className="md:absolute md:min-w-[1200px] rounded-xl md:rounded-3xl shadow-[var(--shadow)]" src='/alura-cases.png' alt="Plataforma Alura" />
         </div>
       </div>
     </div>
